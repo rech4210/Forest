@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class LoadText : MonoBehaviour
 {
-    [Range(0.01f, 1f)] public float textDelay;
+    public string TreeName;
+    [Range(0.01f, 0.1f)] public float textDelay;
     public Text treeText;
     private bool Checking_On_off;
     private Coroutine runningCoroutine;
@@ -26,7 +27,8 @@ public class LoadText : MonoBehaviour
         Checking_On_off = !Checking_On_off;
         if (Checking_On_off == true)
         {
-            string TreeName = "Tree";
+
+
             string txtData_2 = null;
             string[] txtData = null;
             string path = $"{Application.dataPath}\\Resources\\TreeInfo\\{TreeName}.txt";
@@ -61,14 +63,8 @@ public class LoadText : MonoBehaviour
 
         }
     }
-   /* public IEnumerator LoadImage()
+    /*public string Get_TreeName()
     {
-        string path = $"{Application.dataPath}\\Resources\\TreePicture\\Tree.jpg";
-        //string path = "TreePicture/Tree.jpg";
-        GameObject temp = GameObject.Find("RawImage");
-        Texture2D texture = null;
-        texture = Resources.Load(path, typeof(Texture2D)) as Texture2D;
-        Debug.Log(path);
 
         return null;
     }*/
