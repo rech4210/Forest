@@ -1,53 +1,23 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Valve.VR;
 
-using System.Collections;
-
-
-
+public enum WAND_SIDE
+{
+    LEFT = 0,
+    RIGHT,
+    MAX
+}
 public class TestMove : MonoBehaviour
 {
+    SteamVR_Con
+    public SteamVR_TrackedObject mTrackedObj;
+    private SteamVR_Controller.Device mWand { get { return SteamVR_Controller.Input((int)mTrackedObj.index); } }
+    public WAND_SIDE mSide;
 
-
-
-	int speed = 10;
-
-	// Use this for initialization
-
-	void Start()
-	{
-
-
-
-	}
-
-
-
-	// Update is called once per frame
-
-	void Update()
-	{
-
-		moveObject();
-
-	}
-
-
-
-	void moveObject()
-
-	{
-
-		float keyHorizontal = Input.GetAxis("Horizontal");
-
-		float keyVertical = Input.GetAxis("Vertical");
-
-
-
-		transform.Translate(Vector3.right * speed * Time.smoothDeltaTime * keyHorizontal, Space.World);
-
-		transform.Translate(Vector3.forward * speed * Time.smoothDeltaTime * keyVertical, Space.World);
-
-	}
-
+    private void Update()
+    {
+        Debug.Log(string.Format("{0} {1}", mSide, mWand, GetAxis()));
+    }
 }
-
