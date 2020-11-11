@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class LoadText : MonoBehaviour
 {
+    private GameObject obj;
     public string TreeName;
     [Range(0.01f, 0.1f)] public float textDelay;
     public Text treeText;
@@ -20,15 +21,14 @@ public class LoadText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-   
+
     }
     public void LoadText_toggle()
     {
         Checking_On_off = !Checking_On_off;
         if (Checking_On_off == true)
         {
-
-
+            GameObject.Find("Canvas").transform.Find(TreeName).gameObject.SetActive(true);
             string txtData_2 = null;
             string[] txtData = null;
             string path = $"{Application.dataPath}\\Resources\\TreeInfo\\{TreeName}.txt";
@@ -49,6 +49,7 @@ public class LoadText : MonoBehaviour
         }
         else
         {
+            GameObject.Find("Canvas").transform.Find(TreeName).gameObject.SetActive(false);
             StopCoroutine(runningCoroutine);
             treeText.text = null;
         }
