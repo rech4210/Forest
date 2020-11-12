@@ -8,10 +8,13 @@ public class LoadText : MonoBehaviour
 {
     private GameObject obj;
     public string TreeName;
+    public RayCast RC;
     [Range(0.01f, 0.1f)] public float textDelay;
     public Text treeText;
     private bool Checking_On_off;
     private Coroutine runningCoroutine;
+    public RaycastHit hit;
+    float MaxDistance = 300f;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +24,15 @@ public class LoadText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Physics.Raycast(transform.position, transform.forward, out hit, MaxDistance))
+        {
+            Debug.Log("hit");
+        }
     }
     public void LoadText_toggle()
     {
         Checking_On_off = !Checking_On_off;
+        //TreeName = hit.transform.name;
         if (Checking_On_off == true)
         {
             GameObject.Find("Canvas").transform.Find(TreeName).gameObject.SetActive(true);
@@ -64,9 +71,4 @@ public class LoadText : MonoBehaviour
 
         }
     }
-    /*public string Get_TreeName()
-    {
-
-        return null;
-    }*/
 }
