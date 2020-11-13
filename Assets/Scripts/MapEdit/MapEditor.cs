@@ -7,7 +7,7 @@ public class MapEditor : MonoBehaviour
     public GameObject[] trees;
 
     private int selectingIndex;
-    private GameObject map;
+    public GameObject map;
     private List<GameObject> history;
     private Transform createTransform;
 
