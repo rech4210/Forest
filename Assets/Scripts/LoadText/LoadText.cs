@@ -65,7 +65,7 @@ public class LoadText : MonoBehaviour
             //TreeName = hit.transform.name;
         if (Checking_On_off == true && TL.RaycastCheck ==true)
         {
-            LoadText_toggle();
+            InfoUI_toggle();
             TreeName = TL.hit.transform.name;
             GameObject.Find("Canvas").transform.Find(TreeName).gameObject.SetActive(true);
             string txtData_2 = null;
@@ -90,7 +90,7 @@ public class LoadText : MonoBehaviour
         {
             if(TreeName !=null)
             {
-                LoadText_toggle();
+                InfoUI_toggle();
                 GameObject.Find("Canvas").transform.Find(TreeName).gameObject.SetActive(false);
                 StopCoroutine(runningCoroutine);
                 TreeName = null;
@@ -121,7 +121,7 @@ public class LoadText : MonoBehaviour
             if (teleportAction.GetState(handType))
             {
                 Debug.Log("ViewInfo");
-                InfoUI_toggle();
+                LoadText_toggle();
                 yield return new WaitForSecondsRealtime(1f);
             }
             else
