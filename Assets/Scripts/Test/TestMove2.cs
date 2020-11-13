@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Valve.VR;
 public class TestMove2 : MonoBehaviour
 {
+    public SteamVR_Input_Sources moveType;
+    public SteamVR_Action_Boolean moveAtion;
     private CharacterController cc;
     public Transform camTr;
     public float speed = 1.5f;
@@ -16,6 +18,9 @@ public class TestMove2 : MonoBehaviour
 
     void Update()
     {
-        cc.SimpleMove(camTr.forward * speed);
+        if (moveAtion.GetState(moveType))
+        {
+            cc.SimpleMove(camTr.forward * speed);
+        }
     }
 }

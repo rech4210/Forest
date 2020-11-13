@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
+using Valve.VR;
 
 public class LoadText : MonoBehaviour
 {
-    public TestLayser TL;
+    private TestLayser TL;
+
+    public GameObject obj;
     private string TreeName; //나무 들어갈 이름
 
     [Range(0.01f, 0.1f)] public float textDelay;//텍스트 표기 속도
@@ -21,6 +24,10 @@ public class LoadText : MonoBehaviour
 
     float MaxDistance = 300f;//Raycast 사정거리
 
+    public SteamVR_Action_Boolean teleportAction;
+
+    public SteamVR_Input_Sources handType;
+
     //private int layerMask;//Raycast가 식별할 레이어
 
     //private bool RaycastCheck;//Raycast가 물체를 충돌했는가 체크
@@ -28,10 +35,13 @@ public class LoadText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TL = GetComponent<TestLayser>();
+        TL = GameObject.Find("Controller (right)").GetComponent<TestLayser>();
         Checking_On_off = false;
         //layerMask = 1 << 8
+        obj.gameObject.SetActive(false);
         TreeName = null;
+        StartCoroutine(ViewInfo());
+
     }
 
     // Update is called once per frame
@@ -48,14 +58,14 @@ public class LoadText : MonoBehaviour
             RaycastCheck = false;
         }*/
     }
-    public void LoadText_toggle(bool RaycastCheck)
+    public void LoadText_toggle()
     {
         Checking_On_off = !Checking_On_off;
 
             //TreeName = hit.transform.name;
-        if (Checking_On_off == true && RaycastCheck ==true)
+        if (Checking_On_off == true && TL.RaycastCheck ==true)
         {
-            TreeName = hit.transform.name;
+            TreeName = TL.hit.transform.name;
             GameObject.Find("Canvas").transform.Find(TreeName).gameObject.SetActive(true);
             string txtData_2 = null;
             string[] txtData = null;
@@ -84,7 +94,7 @@ public class LoadText : MonoBehaviour
                 TreeName = null;
                 treeText.text = null;
             }
-            else if(RaycastCheck==false)
+            else if(TL.RaycastCheck==false)
             {
                 Checking_On_off = !Checking_On_off;
             }
@@ -100,6 +110,35 @@ public class LoadText : MonoBehaviour
             treeText.text = txtData_2.Substring(0, i);
             yield return new WaitForSecondsRealtime(textDelay);
 
+        }
+    }
+    public IEnumerator ViewInfo()
+    {
+        do
+        {
+            if (teleportAction.GetState(handType))
+            {
+                Debug.Log("ViewInfo");
+                InfoUI_toggle();
+                LoadText_toggle();
+                yield return new WaitForSecondsRealtime(1f);
+            }
+            else
+            {
+                yield return null;
+            }
+        } while (true);
+    }
+
+    public void InfoUI_toggle()
+    {
+        if (obj.gameObject.activeSelf == true)
+        {
+            obj.gameObject.SetActive(false);
+        }
+        else
+        {
+            obj.gameObject.SetActive(true);
         }
     }
 }

@@ -6,7 +6,7 @@ using Valve.VR;
 
 public class TestLayser : MonoBehaviour
 {
-    public LoadText LT;
+    private LoadText LT;
     public SteamVR_Input_Sources handType;
     public SteamVR_Behaviour_Pose controllerPose;
     public SteamVR_Action_Boolean teleportAction;
@@ -19,6 +19,8 @@ public class TestLayser : MonoBehaviour
     private int layerMask;//Raycast가 식별할 레이어
 
     public bool RaycastCheck;//Raycast가 물체를 충돌했는가 체크
+
+    public RaycastHit hit;
 
     private void Start()
     {
@@ -33,22 +35,20 @@ public class TestLayser : MonoBehaviour
     {
         if (teleportAction.GetState(handType))
         {
-            RaycastHit hit;
             
             if (Physics.Raycast(controllerPose.transform.position, transform.forward,
-                out hit, 100,layerMask))
+                out hit, 10000f,layerMask))
             {
                 hitPoint = hit.point;
                 RaycastCheck = true;
-                LT.LoadText_toggle(RaycastCheck);
             }
             else
             {
                 RaycastCheck = false;
-                LT.LoadText_toggle(RaycastCheck);
             }
 
             ShowLayser(hit);
+            Debug.Log("On");
             
         }
         else
