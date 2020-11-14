@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Blossum
+  - Castanopsis sieboldii
+  - Daimyo Oak
+  - Danpung
+  - Qulcham
+  - Khingan Fir
+  - Korean Spicebush
+  - Laurel
+  - Nuti
   layers:
   - Default
   - TransparentFX
