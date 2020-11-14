@@ -248,6 +248,59 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &63390652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 63390654}
+  - component: {fileID: 63390653}
+  m_Layer: 0
+  m_Name: Snow System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &63390653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63390652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e749ba5fbd1cca4dadde3a75a260785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snowPrefab: {fileID: 5982300527586276681, guid: 38b4b6e4cfdf97e43a3ce0cad4effaba,
+    type: 3}
+  player: {fileID: 1022213359}
+  randomMinX: -10
+  randomMaxX: 10
+  randomMinZ: -10
+  randomMaxZ: 10
+  y: 15
+  dropInterval: 0.000001
+  snowSpeed: 1
+--- !u!4 &63390654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63390652}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &102590407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,6 +1113,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1022213359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3194381894288414450, guid: 10ba5d27ec22ec847b417b89f4dbbad1,
+    type: 3}
+  m_PrefabInstance: {fileID: 464541996}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1613580312
 GameObject:
   m_ObjectHideFlags: 0
