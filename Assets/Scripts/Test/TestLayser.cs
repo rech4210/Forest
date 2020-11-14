@@ -53,6 +53,7 @@ public class TestLayser : MonoBehaviour
         }
         else
         {
+            RaycastCheck = false;
             layser.SetActive(false);
         }
     }
