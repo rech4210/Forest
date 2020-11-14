@@ -75,7 +75,15 @@ MonoBehaviour:
   randomMinValue: 0.8
   randomMaxValue: 1.15
   trees:
-  - {fileID: 3805195044490562828, guid: c0391fc2ff28b364bb73098f4dbcf1c1, type: 3}
+  - {fileID: 1448108983761271154, guid: 5b112bf99e9b9b94ebef314b0498a9f5, type: 3}
+  - {fileID: 919132149155446097, guid: 0c26f61713a7fd5469c345de84c85630, type: 3}
+  - {fileID: 5470933108826816140, guid: 938fb074072c09a4ca30b2d99ea39ffc, type: 3}
+  - {fileID: 919132149155446097, guid: d4a1047c21e3e4643ba9f9a49d93552a, type: 3}
+  - {fileID: 1546381393864978717, guid: 9c1c52382bd493c4394d051b6c417962, type: 3}
+  - {fileID: 919132149155446097, guid: 85daff71c4556484497811e20a43fcc1, type: 3}
+  - {fileID: 919132149155446097, guid: 8cc3f2fdd5b66ca42a44592539c6ce66, type: 3}
+  - {fileID: 919132149155446097, guid: d94c10a935a43e34c9fe9dc967e28f07, type: 3}
+  - {fileID: 4989777154285298726, guid: a9975db4978b7da448f8f73f8851afef, type: 3}
 --- !u!33 &3194381894288414454
 MeshFilter:
   m_ObjectHideFlags: 0

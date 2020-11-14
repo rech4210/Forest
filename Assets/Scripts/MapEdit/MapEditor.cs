@@ -118,6 +118,7 @@ public class MapEditor : MonoBehaviour
     private void Create()
     {
         Vector3 position = createTransform.position;
+        position.y -= createTransform.localScale.y / 2;
         Create(position);
     }
 

@@ -59,7 +59,7 @@ public class Editor_Move : MonoBehaviour
             position.y += upDownSpeed * Time.deltaTime;
             transform.position = position;
         }
-        else if (Input.mouseScrollDelta.y < 0)
+        else if (Input.mouseScrollDelta.y < 0 && transform.position.y > 1)
         {
             Vector3 position = transform.position;
             position.y -= upDownSpeed * Time.deltaTime;
