@@ -8,12 +8,14 @@ public class Snow : MonoBehaviour
     {
         if(transform.position.y < 1)
         {
+            //Debug.Log("Destroy");
             Destroy(gameObject);
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
+        //Debug.Log("Destroy");
         Destroy(gameObject);
     }
 }

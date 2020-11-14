@@ -6,11 +6,16 @@ public class SnowSystem : MonoBehaviour
 {
     public GameObject snowPrefab;
     public GameObject player;
-    public float randomMinX, randomMaxX;
-    public float randomMinZ, randomMaxZ;
+
+    [Space(10)]
+    public float maxPoint;
     public float y;
+
+    [Space(10)]
     public float dropInterval;
     public float snowSpeed;
+    public float minSizeValue, maxSizeValue;
+    public float coroutineCount;
 
     private void Start()
     {
@@ -19,7 +24,10 @@ public class SnowSystem : MonoBehaviour
             player = GameObject.Find("Editor");
         }
 
-        StartCoroutine(SnowProcess());
+        for(int i = 0; i < coroutineCount; i++)
+        {
+            StartCoroutine(SnowProcess());
+        }
     }
 
     IEnumerator SnowProcess()
@@ -34,10 +42,11 @@ public class SnowSystem : MonoBehaviour
     private void CreateSnow()
     {
         GameObject snow = Instantiate(snowPrefab);
-        float x = Random.Range(randomMinX, randomMaxX);
-        float z = Random.Range(randomMinZ, randomMaxZ);
+        float xValue = Random.Range(-maxPoint, maxPoint);
+        float zValue = Random.Range(-maxPoint, maxPoint);
         snow.transform.parent = transform;
-        snow.transform.position = new Vector3(x, y, z) + player.transform.position;
+        snow.transform.position = new Vector3(xValue, y, zValue) + player.transform.position;
+        snow.transform.localScale *= Random.Range(minSizeValue, maxSizeValue);
         snow.GetComponent<Rigidbody>().velocity = new Vector3(0, -snowSpeed, 0);
     }
 }
