@@ -47,16 +47,7 @@ public class LoadText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (Physics.Raycast(transform.position, transform.forward, out hit, MaxDistance,layerMask))
-        {
-            Debug.Log(hit.transform.name);
-            RaycastCheck = true;
-        }
-        else
-        {
-            Debug.DrawRay(transform.position, transform.forward * 1000f, Color.blue);
-            RaycastCheck = false;
-        }*/
+ 
     }
     public void LoadText_toggle()
     {
@@ -66,7 +57,7 @@ public class LoadText : MonoBehaviour
         if (Checking_On_off == true && TL.RaycastCheck ==true)
         {
             InfoUI_toggle();
-            TreeName = TL.hit.transform.name;
+            TreeName = TL.hit.transform.tag;
             GameObject.Find("Canvas").transform.Find(TreeName).gameObject.SetActive(true);
             string txtData_2 = null;
             string[] txtData = null;
