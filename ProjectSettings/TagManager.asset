@@ -23,7 +23,7 @@ TagManager:
   - 
   - 
   - Tree
-  - Terrain
+  - backgroud
   - 
   - 
   - 
@@ -47,6 +47,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: backgroud
+    uniqueID: 1454548541
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 1883632871
     locked: 0
