@@ -189,11 +189,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveType: 0
+  noClipCheak:
+    actionPath: 
+    needsReinit: 0
   moveAtion:
+    actionPath: 
+    needsReinit: 0
+  noClipActionUp:
+    actionPath: 
+    needsReinit: 0
+  noClipActionDown:
     actionPath: 
     needsReinit: 0
   camTr: {fileID: 1346922079}
   speed: 2.5
+  noClip: 0
 --- !u!143 &670990015
 CharacterController:
   m_ObjectHideFlags: 0
@@ -448,7 +458,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fd0a3dd68f3afb0489051264ab2b3176, type: 2}
+  - {fileID: 2100000, guid: b042fa481dd80e045ae5673740171807, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -699,40 +709,6 @@ MonoBehaviour:
   layserPrefab: {fileID: 5774254376975983218, guid: 45ecd75691b2ced4ba464bdf39ef12d4,
     type: 3}
   RaycastCheck: 0
---- !u!21 &1334587501
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1342774901 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7740796030030447646, guid: eb7403033d9fee14e8abddf9c1db9cb7,
@@ -797,11 +773,11 @@ PrefabInstance:
     - target: {fileID: 2348914, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1334587501}
+      objectReference: {fileID: 2028342059}
     - target: {fileID: 3380982, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1893500511}
+      objectReference: {fileID: 1853976781}
     - target: {fileID: 11489174, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
       propertyPath: drawWireframeWhenSelectedOnly
       value: 0
@@ -1014,7 +990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1681780048
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1092,11 +1068,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveType: 1
+  noClipCheak:
+    actionPath: /actions/default/in/GrabGrip
+    needsReinit: 0
   moveAtion:
     actionPath: /actions/default/in/GrabPinch
     needsReinit: 0
+  noClipActionUp:
+    actionPath: /actions/default/in/Teleport
+    needsReinit: 0
+  noClipActionDown:
+    actionPath: 
+    needsReinit: 1
   camTr: {fileID: 1560190476}
-  speed: 3
+  speed: 0.2
+  noClip: 0
 --- !u!143 &1795374363
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1207,7 +1193,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849591303}
   m_CullTransparentMesh: 0
---- !u!43 &1893500511
+--- !u!43 &1853976781
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1370,3 +1356,37 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!21 &2028342059
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
