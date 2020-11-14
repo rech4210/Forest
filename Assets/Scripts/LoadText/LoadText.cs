@@ -10,6 +10,8 @@ public class LoadText : MonoBehaviour
     private TestLayser TL;
 
     public GameObject obj;
+
+    private GameObject TreePicture;
     private string TreeName; //나무 들어갈 이름
 
     [Range(0.01f, 0.1f)] public float textDelay;//텍스트 표기 속도
@@ -36,8 +38,8 @@ public class LoadText : MonoBehaviour
     void Start()
     {
         TL = GameObject.Find("Controller (right)").GetComponent<TestLayser>();
+        TreePicture = GameObject.Find("TreePicture");
         Checking_On_off = false;
-        //layerMask = 1 << 8
         obj.gameObject.SetActive(false);
         TreeName = null;
         StartCoroutine(ViewInfo());
@@ -58,7 +60,10 @@ public class LoadText : MonoBehaviour
         {
             InfoUI_toggle();
             TreeName = TL.hit.transform.tag;
-            GameObject.Find("Canvas").transform.Find(TreeName).gameObject.SetActive(true);
+
+            GameObject.Find("Canvas").transform.Find("TreePicture").gameObject.SetActive(true);
+            TreePicture.GetComponent<Image>().sprite = GameObject.Find(TreeName).GetComponent<Image>().sprite;
+
             string txtData_2 = null;
             string[] txtData = null;
             string path = $"{Application.dataPath}\\Resources\\TreeInfo\\{TreeName}.txt";
@@ -82,9 +87,10 @@ public class LoadText : MonoBehaviour
             if(TreeName !=null)
             {
                 InfoUI_toggle();
-                GameObject.Find("Canvas").transform.Find(TreeName).gameObject.SetActive(false);
+                GameObject.Find("Canvas").transform.Find("TreePicture").gameObject.SetActive(false);
                 StopCoroutine(runningCoroutine);
                 TreeName = null;
+                TreePicture.GetComponent<Image>().sprite = null;
                 treeText.text = null;
             }
             else if(TL.RaycastCheck==false)
