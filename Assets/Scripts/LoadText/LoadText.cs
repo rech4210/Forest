@@ -11,6 +11,8 @@ public class LoadText : MonoBehaviour
 
     public GameObject obj;
 
+    public GameObject obj2;
+
     private GameObject TreePicture;
     private string TreeName; //나무 들어갈 이름
 
@@ -41,6 +43,7 @@ public class LoadText : MonoBehaviour
         TreePicture = GameObject.Find("TreePicture");
         Checking_On_off = false;
         obj.gameObject.SetActive(false);
+        obj2.gameObject.SetActive(false);
         TreeName = null;
         StartCoroutine(ViewInfo());
 
@@ -137,6 +140,14 @@ public class LoadText : MonoBehaviour
         else
         {
             obj.gameObject.SetActive(true);
+        }
+        if (obj2.gameObject.activeSelf == true)
+        {
+            obj2.gameObject.SetActive(false);
+        }
+        else
+        {
+            obj2.gameObject.SetActive(true);
         }
     }
 }
