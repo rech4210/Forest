@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class InfoUI : MonoBehaviour
 {
+    private GameObject obj;
     // Start is called before the first frame update
     void Start()
     {
-        
+        obj = GameObject.Find("Tree");
+        obj.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -18,13 +20,13 @@ public class InfoUI : MonoBehaviour
 
     public void InfoUI_toggle()
     {
-        if(this.gameObject.activeSelf == true)
+        if(obj.gameObject.activeSelf == true)
         {
-            this.gameObject.SetActive(false);
+            obj.gameObject.SetActive(false);
         }
         else
         {
-            this.gameObject.SetActive(true);
+            obj.gameObject.SetActive(true);
         }
     }
 }
