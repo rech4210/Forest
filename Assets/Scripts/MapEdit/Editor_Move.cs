@@ -71,6 +71,7 @@ public class Editor_Move : MonoBehaviour
     {
         float mouseInput_x = Input.GetAxisRaw("Mouse X");
         float mouseInput_y = Input.GetAxisRaw("Mouse Y");
+        //Debug.Log(new Vector2(mouseInput_x, mouseInput_y));
 
         if (mouseInput_x != 0 || mouseInput_y != 0)
         {   // 카메라는 x축 회전 / 캐릭터는 y축 회전

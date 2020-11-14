@@ -36,11 +36,16 @@ public class MapEditor : MonoBehaviour
 
     private void UpdateProcess()
     {
-        for (int i = (int)KeyCode.F1; i <= (int)KeyCode.F10; i++)
+        for (int i = (int)KeyCode.F1; i <= (int)KeyCode.F12; i++)
         {
             KeyCode keyCode = (KeyCode)i;
-            if (Input.GetKeyDown(keyCode))
+            if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(keyCode))
             {
+                selectingIndex = i - (int)KeyCode.F1 + 12;
+            }
+            else if (Input.GetKeyDown(keyCode))
+            {
+                
                 selectingIndex = i - (int)KeyCode.F1;
             }
         }
