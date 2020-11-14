@@ -11,19 +11,43 @@ public class Editor_Move : MonoBehaviour
     public float rotateLimitMin = 0;
     public float rotateLimitMax = 0;
 
+    [HideInInspector] public float xMove, zMove;
+
     private GameObject _camera;
 
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         _camera = Camera.main.gameObject;
     }
 
     void Update()
     {
-        float xMove = Input.GetAxisRaw("Horizontal");
-        float zMove = Input.GetAxisRaw("Vertical");
+        Move();
 
-        if(xMove != 0 || zMove != 0)
+        Rotate();
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            ResetRotation();
+        }
+
+        if(Input.GetKey(KeyCode.LeftAlt))
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+    }
+
+    void Move()
+    {
+        xMove = Input.GetAxisRaw("Horizontal");
+        zMove = Input.GetAxisRaw("Vertical");
+
+        if (xMove != 0 || zMove != 0)
         {
             Vector3 moveValue = new Vector3(xMove, 0, zMove) * moveSpeed * Time.deltaTime;
             transform.Translate(moveValue);
@@ -35,13 +59,16 @@ public class Editor_Move : MonoBehaviour
             position.y += upDownSpeed * Time.deltaTime;
             transform.position = position;
         }
-        else if(Input.mouseScrollDelta.y < 0)
+        else if (Input.mouseScrollDelta.y < 0)
         {
             Vector3 position = transform.position;
             position.y -= upDownSpeed * Time.deltaTime;
             transform.position = position;
         }
+    }
 
+    void Rotate()
+    {
         float mouseInput_x = Input.GetAxisRaw("Mouse X");
         float mouseInput_y = Input.GetAxisRaw("Mouse Y");
 
@@ -58,5 +85,11 @@ public class Editor_Move : MonoBehaviour
             rotation_eular.y += rotationValue.y;
             transform.rotation = Quaternion.Euler(rotation_eular);
         }
+    }
+
+    void ResetRotation()
+    {
+        transform.rotation = new Quaternion();
+        _camera.transform.rotation = new Quaternion();
     }
 }

@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class MapEditor : MonoBehaviour
 {
-    public GameObject[] trees;
+    public GameObject map;
+    public bool randomRotation;
+    public bool randomWidth;
+    public bool randomHeight;
+    public float randomMinValue = 0.8f, randomMaxValue = 1.15f;
+    [Space(10)] public GameObject[] trees;
 
     private int selectingIndex;
-    public GameObject map;
     private List<GameObject> history;
     private Transform createTransform;
 
@@ -88,18 +92,46 @@ public class MapEditor : MonoBehaviour
         treeObject.transform.position = position;
         history.Add(treeObject);
         treeObject.transform.parent = map.transform;
+
+        if(randomRotation)
+        {
+            Vector3 rotation = treeObject.transform.rotation.eulerAngles;
+            rotation.y = Random.Range(0, 360f);
+            treeObject.transform.rotation = Quaternion.Euler(rotation);
+        }
+
+        Vector3 size = treeObject.transform.localScale;
+        if (randomWidth)
+        {
+            float randomValue = Random.Range(randomMinValue, randomMaxValue);
+            size.x *= randomValue;
+            size.z *= randomValue;
+        }
+        if (randomHeight)
+        {
+            float randomValue = Random.Range(randomMinValue, randomMaxValue);
+            size.y = randomValue;
+        }
+        treeObject.transform.localScale = size;
     }
     
     private void Create()
     {
         Vector3 position = createTransform.position;
-        position.y = 0;
         Create(position);
     }
 
     private void Ctrl_Z()
     {
-        Destroy(history[history.Count - 1]);
-        history.RemoveAt(history.Count - 1);
+        try
+        {
+
+            Destroy(history[history.Count - 1]);
+            history.RemoveAt(history.Count - 1);
+        }
+        catch (System.ArgumentOutOfRangeException)
+        {
+            Debug.Log("되돌리기 인덱스 초과");
+        }
     }
 }
