@@ -13,7 +13,7 @@ public class SnowSystem : MonoBehaviour
 
     [Space(10)]
     public float dropInterval;
-    public float snowSpeed;
+    public float minSpeed, maxSpeed;
     public float minSizeValue, maxSizeValue;
     public float coroutineCount;
 
@@ -47,6 +47,6 @@ public class SnowSystem : MonoBehaviour
         snow.transform.parent = transform;
         snow.transform.position = new Vector3(xValue, y, zValue) + player.transform.position;
         snow.transform.localScale *= Random.Range(minSizeValue, maxSizeValue);
-        snow.GetComponent<Rigidbody>().velocity = new Vector3(0, -snowSpeed, 0);
+        snow.GetComponent<Rigidbody>().velocity = new Vector3(0, -Random.Range(minSpeed, maxSpeed), 0);
     }
 }

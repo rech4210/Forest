@@ -283,7 +283,8 @@ MonoBehaviour:
   maxPoint: 5
   y: 15
   dropInterval: 0.1
-  snowSpeed: 1
+  minSpeed: 0.1
+  maxSpeed: 5
   minSizeValue: 0.9
   maxSizeValue: 1.5
   coroutineCount: 30
