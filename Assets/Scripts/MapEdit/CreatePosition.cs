@@ -26,7 +26,7 @@ public class CreatePosition : MonoBehaviour
         if (isHit && hit.point.y >= 0)
         {
             Vector3 position = transform.position;
-            position.y = hit.point.y + transform.lossyScale.x / 2;
+            position.y = hit.point.y + transform.localScale.x / 2;
             transform.position = position;
         }
     }
