@@ -35,9 +35,8 @@ public class TestLayser : MonoBehaviour
     {
         if (teleportAction.GetState(handType))
         {
-            
             if (Physics.Raycast(controllerPose.transform.position, transform.forward,
-                out hit, 10000f,layerMask))
+                out hit, 100f,layerMask))
             {
                 hitPoint = hit.point;
                 RaycastCheck = true;
@@ -46,7 +45,6 @@ public class TestLayser : MonoBehaviour
             {
                 RaycastCheck = false;
             }
-
             ShowLayser(hit);
             Debug.Log("On");
             
