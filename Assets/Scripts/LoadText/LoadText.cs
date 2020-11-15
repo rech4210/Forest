@@ -93,12 +93,9 @@ public class LoadText : MonoBehaviour
             {
             txtData_2 = txtData_2 + txtData[i] + System.Environment.NewLine;
             }*/
-
-            for(int i=0; i<txtData.Length; i++)
-            {
-                txtData_2 = txtData[i];
-                runningCoroutine = StartCoroutine(InputText(txtData_2,i));
-            }
+            //txtData_2 = txtData[i];
+            runningCoroutine = StartCoroutine(InputText(txtData));
+            
             //runningCoroutine = StartCoroutine(InputText(txtData_2));
         }
         else
@@ -140,14 +137,17 @@ public class LoadText : MonoBehaviour
         } while (true);
     }
 
-    public IEnumerator InputText(string txtData_2, int num)
+    public IEnumerator InputText(string[] txtData_2)
     {
         Debug.Log(txtData_2.Length);
-        for (int i = 0; i < txtData_2.Length; i++)
+        for(int j=0;j< txtData_2.Length;j++)
         {
-            treeText[num].text = txtData_2.Substring(0, i);
-            yield return new WaitForSecondsRealtime(textDelay);
+            for (int i = 0; i < txtData_2[i].Length; i++)
+            {
+                treeText[j].text = txtData_2[i].Substring(0, i);
+                yield return new WaitForSecondsRealtime(textDelay);
 
+            }
         }
     }
     public IEnumerator ViewInfo()
