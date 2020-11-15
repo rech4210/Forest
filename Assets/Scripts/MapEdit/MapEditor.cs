@@ -92,8 +92,8 @@ public class MapEditor : MonoBehaviour
     {
         try
         {
-            GUI.Box(new Rect(Screen.width / 2 - 200, Screen.height - 55 , 400, 50),
-                $"{trees[selectingIndex].name}\n[{trees[selectingIndex].tag}]");
+            GUI.Box(new Rect(Screen.width / 2 - 150, Screen.height - 60 , 300, 55),
+                $"생성 위치 : {createTransform.position}\n{trees[selectingIndex].name}\n[{trees[selectingIndex].tag}]");
 
             GUI.Box(new Rect(Screen.width - 275, 5, 270, Screen.height - 10), treeListString);
         }
