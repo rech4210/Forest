@@ -18,7 +18,8 @@ public class LoadText : MonoBehaviour
 
     [Range(0.01f, 0.1f)] public float textDelay;//텍스트 표기 속도
 
-    public Text treeText;//표시할 텍스트
+    public Text[] treeText;//표시할 텍스트
+
 
     private bool Checking_On_off; //버튼 온오프
 
@@ -88,11 +89,14 @@ public class LoadText : MonoBehaviour
             txtData = new string[1];
             txtData[0] = path;
             }
-            for (int i = 0; i < txtData.Length; i++)
+            /*for (int i = 0; i < txtData.Length; i++)
             {
             txtData_2 = txtData_2 + txtData[i] + System.Environment.NewLine;
-            }
-            runningCoroutine = StartCoroutine(InputText(txtData_2));
+            }*/
+            //txtData_2 = txtData[i];
+            runningCoroutine = StartCoroutine(InputText(txtData));
+            
+            //runningCoroutine = StartCoroutine(InputText(txtData_2));
         }
         else
         {
@@ -103,7 +107,10 @@ public class LoadText : MonoBehaviour
                 StopCoroutine(runningCoroutine);
                 TreeTag = null;
                 TreePicture.GetComponent<Image>().sprite = null;
-                treeText.text = null;
+                for(int i=0;i<treeText.Length;i++)
+                {
+                    treeText[i].text = null;
+                }
             }
             else if(TL.RaycastCheck==false)
             {
@@ -130,14 +137,17 @@ public class LoadText : MonoBehaviour
         } while (true);
     }
 
-    public IEnumerator InputText(string txtData_2)
+    public IEnumerator InputText(string[] txtData_2)
     {
         Debug.Log(txtData_2.Length);
-        for (int i = 0; i < txtData_2.Length; i++)
+        for(int j=0;j< txtData_2.Length;j++)
         {
-            treeText.text = txtData_2.Substring(0, i);
-            yield return new WaitForSecondsRealtime(textDelay);
+            for (int i = 0; i < txtData_2[i].Length; i++)
+            {
+                treeText[j].text = txtData_2[i].Substring(0, i);
+                yield return new WaitForSecondsRealtime(textDelay);
 
+            }
         }
     }
     public IEnumerator ViewInfo()
