@@ -77,9 +77,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: '
-
-'
+  m_Text: 
 --- !u!1 &726703705
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,9 +429,7 @@ PrefabInstance:
     - target: {fileID: 8351243796221372899, guid: 5c3675777c62eba4197e071a3a8bccb2,
         type: 3}
       propertyPath: m_Text
-      value: '
-
-'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8351243796221372899, guid: 5c3675777c62eba4197e071a3a8bccb2,
         type: 3}
@@ -524,7 +520,7 @@ PrefabInstance:
     - target: {fileID: 8392045070597757242, guid: 5c3675777c62eba4197e071a3a8bccb2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 45
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 8392045070597757242, guid: 5c3675777c62eba4197e071a3a8bccb2,
         type: 3}
@@ -787,9 +783,7 @@ PrefabInstance:
     - target: {fileID: 8351243796221372899, guid: 5c3675777c62eba4197e071a3a8bccb2,
         type: 3}
       propertyPath: m_Text
-      value: '
-
-'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8351243796221372899, guid: 5c3675777c62eba4197e071a3a8bccb2,
         type: 3}
@@ -1122,9 +1116,7 @@ PrefabInstance:
     - target: {fileID: 8351243796221372899, guid: 5c3675777c62eba4197e071a3a8bccb2,
         type: 3}
       propertyPath: m_Text
-      value: '
-
-'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8351243796221372899, guid: 5c3675777c62eba4197e071a3a8bccb2,
         type: 3}
@@ -1199,7 +1191,7 @@ PrefabInstance:
     - target: {fileID: 8392045070597757242, guid: 5c3675777c62eba4197e071a3a8bccb2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -15
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 8392045070597757242, guid: 5c3675777c62eba4197e071a3a8bccb2,
         type: 3}
