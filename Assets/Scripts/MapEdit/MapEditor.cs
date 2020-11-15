@@ -142,7 +142,7 @@ public class MapEditor : MonoBehaviour
         if (randomHeight)
         {
             float randomValue = Random.Range(randomMinValue, randomMaxValue);
-            size.y = randomValue;
+            size.y *= randomValue;
         }
         treeObject.transform.localScale = size;
     }
