@@ -47,11 +47,9 @@ MonoBehaviour:
     type: 3}
   player: {fileID: 0}
   maxPoint: 70
-  y: 15
   dropInterval: 0.1
-  minSpeed: 2
-  maxSpeed: 5
-  minSizeValue: 0.9
-  maxSizeValue: 1.5
+  minSpeed: 1.5
+  maxSpeed: 4
+  minSizeValue: 3
+  maxSizeValue: 5
   coroutineCount: 30
-  winterPoint: {x: 130, y: 0, z: -60}

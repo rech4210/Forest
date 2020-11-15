@@ -9,14 +9,12 @@ public class SnowSystem : MonoBehaviour
 
     [Space(10)]
     public float maxPoint;
-    public float y;
 
     [Space(10)]
     public float dropInterval;
     public float minSpeed, maxSpeed;
     public float minSizeValue, maxSizeValue;
     public float coroutineCount;
-    public Vector3 winterPoint;
 
     private void Start()
     {
@@ -46,7 +44,7 @@ public class SnowSystem : MonoBehaviour
         float xValue = Random.Range(-maxPoint, maxPoint);
         float zValue = Random.Range(-maxPoint, maxPoint);
         snow.transform.parent = transform;
-        snow.transform.position = new Vector3(xValue, y, zValue) + winterPoint;
+        snow.transform.position = new Vector3(xValue, 0, zValue) + transform.position;
         snow.transform.localScale *= Random.Range(minSizeValue, maxSizeValue);
         snow.GetComponent<Rigidbody>().velocity = new Vector3(0, -Random.Range(minSpeed, maxSpeed), 0);
     }
