@@ -140,11 +140,11 @@ public class LoadText : MonoBehaviour
     public IEnumerator InputText(string[] txtData)
     {
         Debug.Log(txtData.Length);
-        for(int j=0;j< txtData.Length;j++)
+        for(int i=0;i< txtData.Length;i++)
         {
-            for (int i = 0; i < txtData[j].Length; i++)
+            for (int j = 0; j <= txtData[i].Length; j++)
             {
-                treeText[j].text = txtData[j].Substring(0, i);
+                treeText[i].text = txtData[i].Substring(0, j);
                 yield return new WaitForSecondsRealtime(textDelay);
 
             }
