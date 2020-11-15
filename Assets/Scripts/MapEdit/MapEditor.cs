@@ -114,7 +114,7 @@ public class MapEditor : MonoBehaviour
 
         if (PrefabFolder.Length > 0)
         {
-            //UnityEditor.PrefabUtility.SaveAsPrefabAsset(map, "Assets" + PrefabFolder.Replace(Application.dataPath, null));
+        //    UnityEditor.PrefabUtility.SaveAsPrefabAsset(map, "Assets" + PrefabFolder.Replace(Application.dataPath, null));
         }
     }
 
