@@ -1,10 +1,10 @@
 {
-  "controller_type": "vive_controller",
-  "description": "",
-  "name": "vive_controller",
+  "app_key": "application.generated.unity.forest.exe",
   "bindings": {
     "/actions/buggy": {
       "chords": [],
+      "poses": [],
+      "haptics": [],
       "sources": [
         {
           "path": "/user/hand/left/input/trigger",
@@ -73,12 +73,30 @@
           }
         }
       ],
-      "poses": [],
-      "haptics": [],
       "skeleton": []
     },
     "/actions/default": {
       "chords": [],
+      "poses": [
+        {
+          "output": "/actions/default/in/pose",
+          "path": "/user/hand/left/pose/raw"
+        },
+        {
+          "output": "/actions/default/in/pose",
+          "path": "/user/hand/right/pose/raw"
+        }
+      ],
+      "haptics": [
+        {
+          "output": "/actions/default/out/haptic",
+          "path": "/user/hand/left/output/haptic"
+        },
+        {
+          "output": "/actions/default/out/haptic",
+          "path": "/user/hand/right/output/haptic"
+        }
+      ],
       "sources": [
         {
           "path": "/user/hand/left/input/trigger",
@@ -154,16 +172,16 @@
               "output": "/actions/default/in/teleport"
             },
             "east": {
-              "output": "/actions/default/in/snapturnright"
+              "output": "/actions/default/in/moveright"
             },
             "north": {
-              "output": "/actions/default/in/teleport"
+              "output": "/actions/default/in/moveforward"
             },
             "south": {
-              "output": "/actions/default/in/teleport"
+              "output": "/actions/default/in/moveback"
             },
             "west": {
-              "output": "/actions/default/in/snapturnleft"
+              "output": "/actions/default/in/moveleft"
             }
           }
         },
@@ -180,16 +198,16 @@
               "output": "/actions/default/in/teleport"
             },
             "east": {
-              "output": "/actions/default/in/snapturnright"
+              "output": "/actions/default/in/moveright"
             },
             "north": {
-              "output": "/actions/default/in/teleport"
+              "output": "/actions/default/in/moveforward"
             },
             "south": {
-              "output": "/actions/default/in/teleport"
+              "output": "/actions/default/in/moveback"
             },
             "west": {
-              "output": "/actions/default/in/snapturnleft"
+              "output": "/actions/default/in/moveleft"
             }
           }
         },
@@ -228,26 +246,6 @@
           }
         }
       ],
-      "poses": [
-        {
-          "output": "/actions/default/in/pose",
-          "path": "/user/hand/left/pose/raw"
-        },
-        {
-          "output": "/actions/default/in/pose",
-          "path": "/user/hand/right/pose/raw"
-        }
-      ],
-      "haptics": [
-        {
-          "output": "/actions/default/out/haptic",
-          "path": "/user/hand/left/output/haptic"
-        },
-        {
-          "output": "/actions/default/out/haptic",
-          "path": "/user/hand/right/output/haptic"
-        }
-      ],
       "skeleton": [
         {
           "output": "/actions/default/in/skeletonlefthand",
@@ -261,112 +259,26 @@
     },
     "/actions/platformer": {
       "chords": [],
-      "sources": [
-        {
-          "path": "/user/hand/left/input/trackpad",
-          "mode": "button",
-          "parameters": {},
-          "inputs": {
-            "click": {
-              "output": "/actions/platformer/in/jump"
-            }
-          }
-        },
-        {
-          "path": "/user/hand/right/input/trackpad",
-          "mode": "button",
-          "parameters": {},
-          "inputs": {
-            "click": {
-              "output": "/actions/platformer/in/jump"
-            }
-          }
-        },
-        {
-          "path": "/user/hand/left/input/trackpad",
-          "mode": "trackpad",
-          "parameters": {},
-          "inputs": {
-            "position": {
-              "output": "/actions/platformer/in/move"
-            }
-          }
-        },
-        {
-          "path": "/user/hand/right/input/trackpad",
-          "mode": "trackpad",
-          "parameters": {},
-          "inputs": {
-            "position": {
-              "output": "/actions/platformer/in/move"
-            }
-          }
-        }
-      ],
       "poses": [],
       "haptics": [],
-      "skeleton": []
-    },
-    "/actions/htc_viu": {
-      "chords": [],
       "sources": [
         {
-          "path": "/user/hand/left/input/grip",
+          "path": "/user/hand/left/input/trackpad",
           "mode": "button",
           "parameters": {},
           "inputs": {
             "click": {
-              "output": "/actions/htc_viu/in/viu_press_02"
+              "output": "/actions/platformer/in/jump"
             }
           }
         },
         {
-          "path": "/user/hand/right/input/grip",
+          "path": "/user/hand/right/input/trackpad",
           "mode": "button",
           "parameters": {},
           "inputs": {
             "click": {
-              "output": "/actions/htc_viu/in/viu_press_02"
-            }
-          }
-        },
-        {
-          "path": "/user/hand/right/input/application_menu",
-          "mode": "button",
-          "parameters": {},
-          "inputs": {
-            "click": {
-              "output": "/actions/htc_viu/in/viu_press_01"
-            }
-          }
-        },
-        {
-          "path": "/user/hand/left/input/application_menu",
-          "mode": "button",
-          "parameters": {},
-          "inputs": {
-            "click": {
-              "output": "/actions/htc_viu/in/viu_press_01"
-            }
-          }
-        },
-        {
-          "path": "/user/hand/left/input/trigger",
-          "mode": "trigger",
-          "parameters": {},
-          "inputs": {
-            "pull": {
-              "output": "/actions/htc_viu/in/viu_axis_1x"
-            }
-          }
-        },
-        {
-          "path": "/user/hand/right/input/trigger",
-          "mode": "trigger",
-          "parameters": {},
-          "inputs": {
-            "pull": {
-              "output": "/actions/htc_viu/in/viu_axis_1x"
+              "output": "/actions/platformer/in/jump"
             }
           }
         },
@@ -375,14 +287,8 @@
           "mode": "trackpad",
           "parameters": {},
           "inputs": {
-            "click": {
-              "output": "/actions/htc_viu/in/viu_press_32"
-            },
             "position": {
-              "output": "/actions/htc_viu/in/viu_axis_0xy"
-            },
-            "touch": {
-              "output": "/actions/htc_viu/in/viu_touch_32"
+              "output": "/actions/platformer/in/move"
             }
           }
         },
@@ -391,80 +297,16 @@
           "mode": "trackpad",
           "parameters": {},
           "inputs": {
-            "click": {
-              "output": "/actions/htc_viu/in/viu_press_32"
-            },
             "position": {
-              "output": "/actions/htc_viu/in/viu_axis_0xy"
-            },
-            "touch": {
-              "output": "/actions/htc_viu/in/viu_touch_32"
+              "output": "/actions/platformer/in/move"
             }
           }
-        },
-        {
-          "path": "/user/hand/right/input/trigger",
-          "mode": "button",
-          "parameters": {
-            "click_activate_threshold": "0.55",
-            "click_deactivate_threshold": "0.45",
-            "haptic_amplitude": "0.2"
-          },
-          "inputs": {
-            "click": {
-              "output": "/actions/htc_viu/in/viu_press_33"
-            }
-          }
-        },
-        {
-          "path": "/user/hand/left/input/trigger",
-          "mode": "button",
-          "parameters": {
-            "click_activate_threshold": "0.55",
-            "click_deactivate_threshold": "0.45",
-            "haptic_amplitude": "0.2"
-          },
-          "inputs": {
-            "click": {
-              "output": "/actions/htc_viu/in/viu_press_33"
-            }
-          }
-        },
-        {
-          "path": "/user/hand/left/input/trigger",
-          "mode": "button",
-          "parameters": {
-            "haptic_amplitude": "0"
-          },
-          "inputs": {
-            "click": {
-              "output": "/actions/htc_viu/in/viu_touch_33"
-            }
-          }
-        },
-        {
-          "path": "/user/hand/right/input/trigger",
-          "mode": "button",
-          "parameters": {},
-          "inputs": {
-            "click": {
-              "output": "/actions/htc_viu/in/viu_touch_33"
-            }
-          }
-        }
-      ],
-      "poses": [],
-      "haptics": [
-        {
-          "output": "/actions/htc_viu/out/viu_vib_01",
-          "path": "/user/hand/left/output/haptic"
-        },
-        {
-          "output": "/actions/htc_viu/out/viu_vib_01",
-          "path": "/user/hand/right/output/haptic"
         }
       ],
       "skeleton": []
     }
-  }
+  },
+  "controller_type": "vive_controller",
+  "description": "",
+  "name": "Saved Forest [Testing] configuration for Vive Controller"
 }

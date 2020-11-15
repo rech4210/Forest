@@ -20,6 +20,7 @@ public class TestMove2 : MonoBehaviour
     void Start()
     {
         cc = GetComponent<CharacterController>();
+        StartCoroutine(moveCast());
     }
 
     void Update()
@@ -28,57 +29,63 @@ public class TestMove2 : MonoBehaviour
         {
             noClip = !noClip;
         }
+    }
 
-        if (noClip == false)
+
+    public IEnumerator moveCast()
+    {
+        do
         {
-            if (moveAtion.GetState(moveType))
+            if (noClip == false)
             {
-                cc.SimpleMove(camTr.forward * speed * 1.5f);
+                if (moveAtion.GetState(moveType))
+                {
+                    cc.SimpleMove(camTr.forward * speed * 1.5f);
+                }
+                speed = 5f;
+                if (moveForward.GetState(moveType))
+                {
+                    cc.SimpleMove(camTr.forward * speed);
+                }
+                if (moveRight.GetState(moveType))
+                {
+                    cc.SimpleMove(camTr.right * speed);
+                }
+                if (moveLeft.GetState(moveType))
+                {
+                    cc.SimpleMove((camTr.right * -1) * speed);
+                }
+                if (moveBack.GetState(moveType))
+                {
+                    cc.SimpleMove((camTr.forward * -1) * speed);
+                }
             }
-            speed = 5f;
-            if (moveForward.GetState(moveType))
+            else if (noClip)
             {
-                cc.SimpleMove(camTr.forward * speed);
-            }
-            if (moveRight.GetState(moveType))
-            {
-                cc.SimpleMove(camTr.right * speed);
-            }
-            if (moveLeft.GetState(moveType))
-            {
-                cc.SimpleMove((camTr.right * -1) * speed);
-            }
-            if (moveBack.GetState(moveType))
-            {
-                cc.SimpleMove((camTr.forward * -1) * speed);
-            }
-        }
-        else if (noClip)
-        {
-            if(moveAtion.GetState(moveType))
-            {
-                cc.Move(camTr.forward * speed);
-            }
-            speed = 0.2f;
-            if (moveForward.GetState(moveType))
-            {
-                cc.Move(camTr.forward * speed);
-            }
-            if (moveRight.GetState(moveType))
-            {
-                cc.Move(camTr.right * speed);
-            }
-            if (moveLeft.GetState(moveType))
-            {
-                cc.Move((camTr.right * -1) * speed);
-            }
-            if (moveBack.GetState(moveType))
-            {
-                cc.Move((camTr.forward * -1) * speed);
-            }
+                if (moveAtion.GetState(moveType))
+                {
+                    cc.Move(camTr.forward * speed);
+                }
+                speed = 0.2f;
+                if (moveForward.GetState(moveType))
+                {
+                    cc.Move(camTr.forward * speed);
+                }
+                if (moveRight.GetState(moveType))
+                {
+                    cc.Move(camTr.right * speed);
+                }
+                if (moveLeft.GetState(moveType))
+                {
+                    cc.Move((camTr.right * -1) * speed);
+                }
+                if (moveBack.GetState(moveType))
+                {
+                    cc.Move((camTr.forward * -1) * speed);
+                }
 
-        }
-        
-
+            }
+            yield return new WaitForSecondsRealtime(0.016f);
+        } while (true);
     }
 }
