@@ -1697,6 +1697,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Editor
       objectReference: {fileID: 0}
+    - target: {fileID: 3194381894288414456, guid: 10ba5d27ec22ec847b417b89f4dbbad1,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 3194381894288414457, guid: 10ba5d27ec22ec847b417b89f4dbbad1,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -53,6 +53,16 @@ public class Editor_Move : MonoBehaviour
             transform.Translate(moveValue);
         }
 
+        if(Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            ModifySpeed(2f);
+        }
+        else if(Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            ModifySpeed(-2f);
+        }
+
+
         if (Input.mouseScrollDelta.y > 0)
         {
             Vector3 position = transform.position;
@@ -65,6 +75,11 @@ public class Editor_Move : MonoBehaviour
             position.y -= upDownSpeed * Time.deltaTime;
             transform.position = position;
         }
+    }
+
+    void ModifySpeed(float v)
+    {
+        moveSpeed += v;
     }
 
     void Rotate()
