@@ -20,8 +20,18 @@ public class Sound : MonoBehaviour
                 return;
             }
         }
+
+        bool isSnow = -150 < transform.position.x && transform.position.x < 0 && 95 < transform.position.z && transform.position.z < 250;
+        if(isSnow)
+        {
+            audioIdx = Random.Range(0, 2);
+        }
+        else
+        {
+            audioIdx = Random.Range(2, 4);
+        }
         
-        audioIdx = Random.Range(0, audioSource.Length);
+        
         if (TestMove2.walk)
         {
             audioSource[audioIdx].Play();

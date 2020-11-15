@@ -42,32 +42,31 @@ public class TestMove2 : MonoBehaviour
                 if (moveAtion.GetState(moveType))
                 {
                     cc.SimpleMove(camTr.forward * speed * 1.5f);
-                    walk = true;
                 }
                 speed = 5f;
                 if (moveForward.GetState(moveType))
                 {
                     cc.SimpleMove(camTr.forward * speed);
-                    walk = true;
                 }
                 if (moveRight.GetState(moveType))
                 {
                     cc.SimpleMove(camTr.right * speed);
-                    walk = true;
                 }
                 if (moveLeft.GetState(moveType))
                 {
                     cc.SimpleMove((camTr.right * -1) * speed);
-                    walk = true;
                 }
                 if (moveBack.GetState(moveType))
                 {
                     cc.SimpleMove((camTr.forward * -1) * speed);
-                    walk = true;
                 }
+
+                walk = moveAtion.GetState(moveType) || moveForward.GetState(moveType) || moveRight.GetState(moveType)
+                    || moveLeft.GetState(moveType) || moveBack.GetState(moveType);
             }
             else if (noClip)
             {
+                walk = false;
                 if (moveAtion.GetState(moveType))
                 {
                     cc.Move(camTr.forward * speed);
@@ -89,9 +88,7 @@ public class TestMove2 : MonoBehaviour
                 {
                     cc.Move((camTr.forward * -1) * speed);
                 }
-
             }
-            walk = false;
             yield return new WaitForSecondsRealtime(0.016f);
         } while (true);
     }

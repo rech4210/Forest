@@ -50,6 +50,6 @@ MonoBehaviour:
   dropInterval: 0.1
   minSpeed: 1.5
   maxSpeed: 4
-  minSizeValue: 3
-  maxSizeValue: 5
+  minSizeValue: 1.5
+  maxSizeValue: 3.5
   coroutineCount: 30
