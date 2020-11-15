@@ -110,11 +110,11 @@ public class MapEditor : MonoBehaviour
     public void Save()
     {
         string PrefabFolder = null;
-        PrefabFolder = UnityEditor.EditorUtility.SaveFilePanel("Save map prefab", PrefabFolder, "New map", "prefab");
+        //PrefabFolder = UnityEditor.EditorUtility.SaveFilePanel("Save map prefab", PrefabFolder, "New map", "prefab");
 
         if (PrefabFolder.Length > 0)
         {
-            UnityEditor.PrefabUtility.SaveAsPrefabAsset(map, "Assets" + PrefabFolder.Replace(Application.dataPath, null));
+            //UnityEditor.PrefabUtility.SaveAsPrefabAsset(map, "Assets" + PrefabFolder.Replace(Application.dataPath, null));
         }
     }
 
