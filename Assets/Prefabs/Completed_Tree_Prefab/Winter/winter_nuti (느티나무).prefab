@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4919821154609139302}
   - component: {fileID: 7705900931861687958}
   - component: {fileID: 5460524637196424508}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: nuti_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 6116969555546175851}
   - component: {fileID: 687950655308405222}
   - component: {fileID: 8930152561244437654}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: nuti_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4465971173299180873}
   - component: {fileID: 7022571823566634527}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CollisionObject0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8375814595401216560}
   - component: {fileID: 5857519864008310347}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CollisionObject1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 6568197966166247787}
   - component: {fileID: 2124840207827533338}
   - component: {fileID: 356410180910839385}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "winter_nuti (\uB290\uD2F0\uB098\uBB34)"
   m_TagString: Nuti
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 6049109696703430915}
   - component: {fileID: 2345203943336921882}
   - component: {fileID: 7749973618429648615}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: nuti_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4042354959896530013}
   - component: {fileID: 1637566115271601919}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CollisionObject2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,10 +550,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2678065587550146648, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 206624097519807473, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
         type: 3}
       propertyPath: m_Name
       value: nuti_branch_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1868112105908768281, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a, type: 3}
@@ -625,10 +660,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8238151916236468377, guid: c3bd596607308c640b9ba62437e5636f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c3bd596607308c640b9ba62437e5636f,
         type: 3}
       propertyPath: m_Name
       value: nuti_body_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c3bd596607308c640b9ba62437e5636f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: c3bd596607308c640b9ba62437e5636f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: c3bd596607308c640b9ba62437e5636f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049825017616913943, guid: c3bd596607308c640b9ba62437e5636f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: c3bd596607308c640b9ba62437e5636f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909040957106428656, guid: c3bd596607308c640b9ba62437e5636f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3bd596607308c640b9ba62437e5636f, type: 3}
@@ -700,10 +770,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1354492700143583802, guid: 794756d2d92a6c84f9d234911d9fc152,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 794756d2d92a6c84f9d234911d9fc152,
         type: 3}
       propertyPath: m_Name
       value: nuti_branch_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 794756d2d92a6c84f9d234911d9fc152,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: 794756d2d92a6c84f9d234911d9fc152,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: 794756d2d92a6c84f9d234911d9fc152,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: 794756d2d92a6c84f9d234911d9fc152,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5268157834126269701, guid: 794756d2d92a6c84f9d234911d9fc152,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476337460457438201, guid: 794756d2d92a6c84f9d234911d9fc152,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794756d2d92a6c84f9d234911d9fc152, type: 3}

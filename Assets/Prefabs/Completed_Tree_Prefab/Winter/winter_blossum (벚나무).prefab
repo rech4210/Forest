@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7332120265542958424}
   - component: {fileID: 2539093657502630479}
   - component: {fileID: 4736214709851696216}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: blossum_1_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 5946935118235305473}
   - component: {fileID: 2420489830626818192}
   - component: {fileID: 1356673001328355424}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: blossum_1_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 5399668373660985233}
   - component: {fileID: 915750729106837728}
   - component: {fileID: 1530007457981847715}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "winter_blossum (\uBC9A\uB098\uBB34)"
   m_TagString: Blossum
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3185106619156462515}
   - component: {fileID: 8123573828030435557}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CollisionObject0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7346860253635075274}
   - component: {fileID: 4648704164521791665}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CollisionObject1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3013120278602113703}
   - component: {fileID: 536026428211970053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CollisionObject2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +407,7 @@ GameObject:
   - component: {fileID: 7927132212607921559}
   - component: {fileID: 9049425061615336576}
   - component: {fileID: 8125446826585284302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: blossum_1_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -546,10 +546,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6079750908514391091, guid: f4a8d8ee1688bf74aafd743f97723432,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f4a8d8ee1688bf74aafd743f97723432,
         type: 3}
       propertyPath: m_Name
       value: blossum_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f4a8d8ee1688bf74aafd743f97723432,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: f4a8d8ee1688bf74aafd743f97723432,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: f4a8d8ee1688bf74aafd743f97723432,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: f4a8d8ee1688bf74aafd743f97723432,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964458344107150877, guid: f4a8d8ee1688bf74aafd743f97723432,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488498365085563617, guid: f4a8d8ee1688bf74aafd743f97723432,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4a8d8ee1688bf74aafd743f97723432, type: 3}
@@ -621,10 +656,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7753837500295536056, guid: c44b87c5cddda924494ee27f4ada42de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -654597466103200963, guid: c44b87c5cddda924494ee27f4ada42de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c44b87c5cddda924494ee27f4ada42de,
         type: 3}
       propertyPath: m_Name
       value: blossum_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c44b87c5cddda924494ee27f4ada42de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: c44b87c5cddda924494ee27f4ada42de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: c44b87c5cddda924494ee27f4ada42de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: c44b87c5cddda924494ee27f4ada42de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6849764736260812650, guid: c44b87c5cddda924494ee27f4ada42de,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c44b87c5cddda924494ee27f4ada42de, type: 3}

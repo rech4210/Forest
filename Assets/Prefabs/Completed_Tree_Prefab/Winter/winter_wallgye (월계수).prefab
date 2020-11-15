@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 270092032795898585}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "winter_wallgye (\uC6D4\uACC4\uC218)"
   m_TagString: Laurel
   m_Icon: {fileID: 0}
@@ -93,10 +93,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7789493041388236801, guid: 0881cc9c29c8dcb47b0d7d9e1d30d16b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -257504199672425610, guid: 0881cc9c29c8dcb47b0d7d9e1d30d16b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0881cc9c29c8dcb47b0d7d9e1d30d16b,
         type: 3}
       propertyPath: m_Name
       value: winter_wallgye
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0881cc9c29c8dcb47b0d7d9e1d30d16b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: 0881cc9c29c8dcb47b0d7d9e1d30d16b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: 0881cc9c29c8dcb47b0d7d9e1d30d16b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2473944032896584736, guid: 0881cc9c29c8dcb47b0d7d9e1d30d16b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: 0881cc9c29c8dcb47b0d7d9e1d30d16b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0881cc9c29c8dcb47b0d7d9e1d30d16b, type: 3}

@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!64 &8385955025224557950
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5006124833717602760}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300004, guid: 0c26f61713a7fd5469c345de84c85630, type: 3}
+--- !u!64 &5142896434481413789
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6420002615748583687}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: 0c26f61713a7fd5469c345de84c85630, type: 3}
 --- !u!1 &6597329240748104676
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,7 +37,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7157371962577643099}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Castanopsis sieboldii (\uAD6C\uC2E4\uC7A3\uBC24\uB098\uBB34)"
   m_TagString: Castanopsis sieboldii
   m_Icon: {fileID: 0}
@@ -31,6 +59,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &4087926167132010391
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8753175462997156899}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 0c26f61713a7fd5469c345de84c85630, type: 3}
 --- !u!1001 &4928143186802984870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38,6 +80,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7157371962577643099}
     m_Modifications:
+    - target: {fileID: -9143120757388702098, guid: 0c26f61713a7fd5469c345de84c85630,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c26f61713a7fd5469c345de84c85630,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -93,16 +140,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4819468791790754939, guid: 0c26f61713a7fd5469c345de84c85630,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0c26f61713a7fd5469c345de84c85630,
         type: 3}
       propertyPath: m_Name
       value: Castanopsis sieboldii
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0c26f61713a7fd5469c345de84c85630,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2124615195486758561, guid: 0c26f61713a7fd5469c345de84c85630,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c26f61713a7fd5469c345de84c85630, type: 3}
 --- !u!4 &4895115253795921997 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0c26f61713a7fd5469c345de84c85630,
+    type: 3}
+  m_PrefabInstance: {fileID: 4928143186802984870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8753175462997156899 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4819468791790754939, guid: 0c26f61713a7fd5469c345de84c85630,
+    type: 3}
+  m_PrefabInstance: {fileID: 4928143186802984870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6420002615748583687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2124615195486758561, guid: 0c26f61713a7fd5469c345de84c85630,
+    type: 3}
+  m_PrefabInstance: {fileID: 4928143186802984870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5006124833717602760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -9143120757388702098, guid: 0c26f61713a7fd5469c345de84c85630,
     type: 3}
   m_PrefabInstance: {fileID: 4928143186802984870}
   m_PrefabAsset: {fileID: 0}
