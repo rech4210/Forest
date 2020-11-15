@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8215777992787960131}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Khingan Fir (\uBD84\uBE44\uB098\uBB34)"
   m_TagString: Khingan Fir
   m_Icon: {fileID: 0}
@@ -93,10 +93,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5638665852978400229, guid: 85daff71c4556484497811e20a43fcc1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -4823390885707437516, guid: 85daff71c4556484497811e20a43fcc1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 85daff71c4556484497811e20a43fcc1,
         type: 3}
       propertyPath: m_Name
       value: Khingan Fir
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 85daff71c4556484497811e20a43fcc1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052268957625601564, guid: 85daff71c4556484497811e20a43fcc1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: 85daff71c4556484497811e20a43fcc1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: 85daff71c4556484497811e20a43fcc1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: 85daff71c4556484497811e20a43fcc1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85daff71c4556484497811e20a43fcc1, type: 3}

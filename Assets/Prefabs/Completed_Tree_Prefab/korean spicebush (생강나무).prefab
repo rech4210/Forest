@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1458554734047522563}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "korean spicebush (\uC0DD\uAC15\uB098\uBB34)"
   m_TagString: Korean Spicebush
   m_Icon: {fileID: 0}
@@ -93,10 +93,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7426317085149339164, guid: 8cc3f2fdd5b66ca42a44592539c6ce66,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -4157821688386750307, guid: 8cc3f2fdd5b66ca42a44592539c6ce66,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -3965895573710483288, guid: 8cc3f2fdd5b66ca42a44592539c6ce66,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8cc3f2fdd5b66ca42a44592539c6ce66,
         type: 3}
       propertyPath: m_Name
       value: korean spicebush
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8cc3f2fdd5b66ca42a44592539c6ce66,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: 8cc3f2fdd5b66ca42a44592539c6ce66,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cc3f2fdd5b66ca42a44592539c6ce66, type: 3}

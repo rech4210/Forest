@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3445041361262624791}
   - component: {fileID: 4763966292501253324}
   - component: {fileID: 4834261850083696509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: danpung_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5075133069983939925}
   - component: {fileID: 7552228148204265463}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CollisionObject2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 2689149841515837539}
   - component: {fileID: 7137035671291023122}
   - component: {fileID: 8828484513212712785}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "winter_danpung (\uB2E8\uD48D\uB098\uBB34)"
   m_TagString: Danpung
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 741955081766355768}
   - component: {fileID: 3403944514527907651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CollisionObject1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4867682934283363393}
   - component: {fileID: 2234353955730231063}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CollisionObject0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 4793815377253687020}
   - component: {fileID: 7741652628842359727}
   - component: {fileID: 1398724804133216907}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: danpung_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 2160960507714033557}
   - component: {fileID: 2139142772443391365}
   - component: {fileID: 6618642867694827892}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: danpung_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,10 +549,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1399158978419983152, guid: ca818afc539d85144bc6590f9ef61b5a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -271558189833078339, guid: ca818afc539d85144bc6590f9ef61b5a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ca818afc539d85144bc6590f9ef61b5a,
         type: 3}
       propertyPath: m_Name
       value: danpung_branch_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca818afc539d85144bc6590f9ef61b5a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: ca818afc539d85144bc6590f9ef61b5a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: ca818afc539d85144bc6590f9ef61b5a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: ca818afc539d85144bc6590f9ef61b5a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340750065106541232, guid: ca818afc539d85144bc6590f9ef61b5a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca818afc539d85144bc6590f9ef61b5a, type: 3}
@@ -624,10 +659,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6911777408680900240, guid: 575f02a1b64ce1b489ff98088c063e13,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -3141059224323172949, guid: 575f02a1b64ce1b489ff98088c063e13,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 575f02a1b64ce1b489ff98088c063e13,
         type: 3}
       propertyPath: m_Name
       value: danpung_branch
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 575f02a1b64ce1b489ff98088c063e13,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: 575f02a1b64ce1b489ff98088c063e13,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: 575f02a1b64ce1b489ff98088c063e13,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: 575f02a1b64ce1b489ff98088c063e13,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915765218779105316, guid: 575f02a1b64ce1b489ff98088c063e13,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 575f02a1b64ce1b489ff98088c063e13, type: 3}

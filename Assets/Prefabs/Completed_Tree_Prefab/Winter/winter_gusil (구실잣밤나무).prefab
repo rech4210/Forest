@@ -1,5 +1,47 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!64 &4132580956252429605
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32628056568859107}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: f173a9c120b543543b48cb9dd2aff716, type: 3}
+--- !u!64 &7347069393857176584
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965900684871992979}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: f173a9c120b543543b48cb9dd2aff716, type: 3}
+--- !u!64 &3107062790352572522
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4403090335955403270}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300004, guid: f173a9c120b543543b48cb9dd2aff716, type: 3}
 --- !u!1 &8725511625577787371
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,7 +51,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9137574949017343509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "winter_gusil (\uAD6C\uC2E4\uC7A3\uBC24\uB098\uBB34)"
   m_TagString: Castanopsis sieboldii
   m_Icon: {fileID: 0}
@@ -98,11 +140,49 @@ PrefabInstance:
       propertyPath: m_Name
       value: winter_gusil
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f173a9c120b543543b48cb9dd2aff716,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495904154796862845, guid: f173a9c120b543543b48cb9dd2aff716,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444193134215095960, guid: f173a9c120b543543b48cb9dd2aff716,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7663838709895096808, guid: f173a9c120b543543b48cb9dd2aff716,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f173a9c120b543543b48cb9dd2aff716, type: 3}
 --- !u!4 &6968832519291013264 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f173a9c120b543543b48cb9dd2aff716,
+    type: 3}
+  m_PrefabInstance: {fileID: 7439099125178920827}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &965900684871992979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7663838709895096808, guid: f173a9c120b543543b48cb9dd2aff716,
+    type: 3}
+  m_PrefabInstance: {fileID: 7439099125178920827}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &32628056568859107 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7444193134215095960, guid: f173a9c120b543543b48cb9dd2aff716,
+    type: 3}
+  m_PrefabInstance: {fileID: 7439099125178920827}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4403090335955403270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6495904154796862845, guid: f173a9c120b543543b48cb9dd2aff716,
     type: 3}
   m_PrefabInstance: {fileID: 7439099125178920827}
   m_PrefabAsset: {fileID: 0}

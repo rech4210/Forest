@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 170932776638999829}
   - component: {fileID: 1115554184765200441}
   - component: {fileID: 3879324555811321412}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gulcharm_body_branch_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 4695544213858471467}
   - component: {fileID: 3068393285793873395}
   - component: {fileID: 740424499563214434}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gulcharm_body_branch_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 1656586251989250376}
   - component: {fileID: 4048536988006045973}
   - component: {fileID: 3456520472513020141}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gulcharm_body_branch_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 783254558781863641}
   - component: {fileID: 2629596409262036091}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CollisionObject2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 7629402282945573871}
   - component: {fileID: 3439355236102751390}
   - component: {fileID: 3906240045036326109}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "winter_gulcharm (\uAD74\uCC38\uB098\uBB34)"
   m_TagString: Qulcham
   m_Icon: {fileID: 0}
@@ -409,7 +409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5114725007018543284}
   - component: {fileID: 7173652547692676303}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CollisionObject1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -454,7 +454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1098219336305209293}
   - component: {fileID: 6031118601372894363}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CollisionObject0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,10 +550,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1551083028398948493, guid: 8ba9ef54c73694048984b503c849610d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8ba9ef54c73694048984b503c849610d,
         type: 3}
       propertyPath: m_Name
       value: gulcharm_body_twigs
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8ba9ef54c73694048984b503c849610d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: 8ba9ef54c73694048984b503c849610d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: 8ba9ef54c73694048984b503c849610d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466912033870870122, guid: 8ba9ef54c73694048984b503c849610d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: 8ba9ef54c73694048984b503c849610d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883693195606825666, guid: 8ba9ef54c73694048984b503c849610d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ba9ef54c73694048984b503c849610d, type: 3}
