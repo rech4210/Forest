@@ -210,7 +210,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 6650979050236800952}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.36576003
   m_Height: 3.47472
   m_Direction: 0
@@ -255,7 +255,7 @@ SphereCollider:
   m_GameObject: {fileID: 6902170854444066393}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 3.6576
   m_Center: {x: 0, y: 0, z: 0}
@@ -299,7 +299,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 7027288590812072712}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 1.018032
   m_Height: 3.5600638
   m_Direction: 0
