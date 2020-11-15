@@ -137,14 +137,14 @@ public class LoadText : MonoBehaviour
         } while (true);
     }
 
-    public IEnumerator InputText(string[] txtData_2)
+    public IEnumerator InputText(string[] txtData)
     {
-        Debug.Log(txtData_2.Length);
-        for(int j=0;j< txtData_2.Length;j++)
+        Debug.Log(txtData.Length);
+        for(int i=0;i< txtData.Length;i++)
         {
-            for (int i = 0; i < txtData_2[i].Length; i++)
+            for (int j = 0; j <= txtData[i].Length; j++)
             {
-                treeText[j].text = txtData_2[i].Substring(0, i);
+                treeText[i].text = txtData[i].Substring(0, j);
                 yield return new WaitForSecondsRealtime(textDelay);
 
             }

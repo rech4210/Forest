@@ -18,7 +18,11 @@ public class MapEditor : MonoBehaviour
 
     private void Start()
     {
-        map = new GameObject("Map");
+        if(map == null)
+        {
+            map = new GameObject("Map");
+        }
+        
         history = new List<GameObject>();
         createTransform = gameObject.transform.Find("Create Position").transform;
 

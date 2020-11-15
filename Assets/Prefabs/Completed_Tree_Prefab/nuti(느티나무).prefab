@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5842493937752668561}
   - component: {fileID: 9197157617544681825}
   - component: {fileID: 6815542967406453451}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: nuti_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 4733799329499025052}
   - component: {fileID: 2080123682567974417}
   - component: {fileID: 7979327951104904033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: nuti_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,9 +191,9 @@ GameObject:
   - component: {fileID: 5653406551067115164}
   - component: {fileID: 589673477317200365}
   - component: {fileID: 1270080128633078190}
-  m_Layer: 0
-  m_Name: nuti
-  m_TagString: Untagged
+  m_Layer: 8
+  m_Name: "nuti(\uB290\uD2F0\uB098\uBB34)"
+  m_TagString: Nuti
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -277,7 +277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2929682889367954110}
   - component: {fileID: 8369708820203293160}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CollisionObject0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7020791798299297223}
   - component: {fileID: 4906695185015146940}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CollisionObject1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -366,7 +366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3263797347630136234}
   - component: {fileID: 282547802096670984}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CollisionObject2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +413,7 @@ GameObject:
   - component: {fileID: 5089282216489514740}
   - component: {fileID: 3880366207232228589}
   - component: {fileID: 9142146714425436432}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: nuti_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,10 +553,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1873751009497393230, guid: 31b1cb7d3068a514eac2717a1b021b26,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 31b1cb7d3068a514eac2717a1b021b26,
         type: 3}
       propertyPath: m_Name
       value: nuti_leaves_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 31b1cb7d3068a514eac2717a1b021b26,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: 31b1cb7d3068a514eac2717a1b021b26,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: 31b1cb7d3068a514eac2717a1b021b26,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1835304422309469021, guid: 31b1cb7d3068a514eac2717a1b021b26,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: 31b1cb7d3068a514eac2717a1b021b26,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650062852941219611, guid: 31b1cb7d3068a514eac2717a1b021b26,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31b1cb7d3068a514eac2717a1b021b26, type: 3}
@@ -628,10 +663,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2678065587550146648, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 206624097519807473, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
         type: 3}
       propertyPath: m_Name
       value: nuti_branch_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1868112105908768281, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a4c9cbf6a588564b8b0baa6db3fb29a, type: 3}
@@ -703,10 +773,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1354492700143583802, guid: 794756d2d92a6c84f9d234911d9fc152,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 794756d2d92a6c84f9d234911d9fc152,
         type: 3}
       propertyPath: m_Name
       value: nuti_branch_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 794756d2d92a6c84f9d234911d9fc152,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: 794756d2d92a6c84f9d234911d9fc152,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: 794756d2d92a6c84f9d234911d9fc152,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: 794756d2d92a6c84f9d234911d9fc152,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5268157834126269701, guid: 794756d2d92a6c84f9d234911d9fc152,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476337460457438201, guid: 794756d2d92a6c84f9d234911d9fc152,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 794756d2d92a6c84f9d234911d9fc152, type: 3}
@@ -783,6 +888,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: nuti_leaves_3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 748ee5314c52787449bad0139b865c5a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: 748ee5314c52787449bad0139b865c5a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: 748ee5314c52787449bad0139b865c5a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: 748ee5314c52787449bad0139b865c5a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287286673932134063, guid: 748ee5314c52787449bad0139b865c5a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 748ee5314c52787449bad0139b865c5a, type: 3}
 --- !u!4 &4356973986924165550 stripped
@@ -853,10 +983,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8238151916236468377, guid: c3bd596607308c640b9ba62437e5636f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c3bd596607308c640b9ba62437e5636f,
         type: 3}
       propertyPath: m_Name
       value: nuti_body_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c3bd596607308c640b9ba62437e5636f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: c3bd596607308c640b9ba62437e5636f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: c3bd596607308c640b9ba62437e5636f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049825017616913943, guid: c3bd596607308c640b9ba62437e5636f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: c3bd596607308c640b9ba62437e5636f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909040957106428656, guid: c3bd596607308c640b9ba62437e5636f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3bd596607308c640b9ba62437e5636f, type: 3}
@@ -928,10 +1093,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3078471069558167923, guid: 02630c876fbe3e64aa2acf4cbf8b95bb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 02630c876fbe3e64aa2acf4cbf8b95bb,
         type: 3}
       propertyPath: m_Name
       value: nuti_leaves_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 02630c876fbe3e64aa2acf4cbf8b95bb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218912716677395249, guid: 02630c876fbe3e64aa2acf4cbf8b95bb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400086564404443856, guid: 02630c876fbe3e64aa2acf4cbf8b95bb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3361634513375469152, guid: 02630c876fbe3e64aa2acf4cbf8b95bb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02630c876fbe3e64aa2acf4cbf8b95bb, type: 3}

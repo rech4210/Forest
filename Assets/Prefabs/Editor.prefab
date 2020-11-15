@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51fad9bab8943e240b31f745e39a493f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 15
   upDownSpeed: 25
   rotationSpeed: 10
   rotateLimitMin: -20
@@ -83,6 +83,7 @@ MonoBehaviour:
   - {fileID: 5822438110285235305, guid: f81942eae612ed240a29c62e3025cba0, type: 3}
   - {fileID: 4652452351184014455, guid: faf0e748f31f76b46bb2f72e43d8b59f, type: 3}
   - {fileID: 4237597378213719505, guid: c56793f892cd97d4f82c19c59cab5d12, type: 3}
+  - {fileID: 4989777154285298726, guid: a9975db4978b7da448f8f73f8851afef, type: 3}
   - {fileID: 4338197584176047769, guid: ac60a6e4ae3b9ed44b75d1a563c3b99f, type: 3}
   - {fileID: 4730091783227784491, guid: 0d89d168ed3764942a1685ebad760b84, type: 3}
   - {fileID: 8725511625577787371, guid: b4d6143534b9c324381c165d797c9e44, type: 3}
@@ -92,8 +93,7 @@ MonoBehaviour:
   - {fileID: 4206030843276624874, guid: 47fbf3b98aa11ca4592824be61cbee35, type: 3}
   - {fileID: 4457315049982278856, guid: 92f14d510e80d8a46a2a6c5bd31abc89, type: 3}
   - {fileID: 4875418214011840784, guid: 25c01453da6f8c44083ae6173babc929, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5795356381489402833, guid: 52970d74ae6dbc741a5da8acdb35d472, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
