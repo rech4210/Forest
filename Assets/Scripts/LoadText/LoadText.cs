@@ -14,7 +14,7 @@ public class LoadText : MonoBehaviour
     public GameObject obj2;
 
     public GameObject TreePicture;
-    private string TreeName; //나무 들어갈 이름
+    private string TreeTag; //나무 들어갈 이름
 
     [Range(0.01f, 0.1f)] public float textDelay;//텍스트 표기 속도
 
@@ -44,7 +44,7 @@ public class LoadText : MonoBehaviour
         Checking_On_off = false;
         obj.gameObject.SetActive(false);
         obj2.gameObject.SetActive(false);
-        TreeName = null;
+        TreeTag = null;
         StartCoroutine(ViewInfo());
 
     }
@@ -62,15 +62,23 @@ public class LoadText : MonoBehaviour
         if (Checking_On_off == true && TL.RaycastCheck ==true)
         {
             InfoUI_toggle();
-            TreeName = TL.hit.transform.tag.ToString();
+            TreeTag = TryingGetTagAtParent(TL.hit.transform);
 
             //GameObject.Find("Canvas").transform.Find("TreePicture").gameObject.SetActive(true);
-            Debug.Log(TreeName);
-            TreePicture.GetComponent<Image>().sprite = GameObject.Find(TreeName).GetComponent<Image>().sprite;
+            Debug.Log(TreeTag);
+
+            try
+            {
+                TreePicture.GetComponent<Image>().sprite = GameObject.Find(TreeTag+ "_Image").GetComponent<Image>().sprite;
+            }
+            catch (System.NullReferenceException)
+            {
+                Debug.Log("이미지 오류 : " + GameObject.Find(TreeTag).name);
+            }
 
             string txtData_2 = null;
             string[] txtData = null;
-            string path = $"{Application.dataPath}\\Resources\\TreeInfo\\{TreeName}.txt";
+            string path = $"{Application.dataPath}\\Resources\\TreeInfo\\{TreeTag}.txt";
             try
             {
             txtData = File.ReadAllLines(path);
@@ -88,12 +96,12 @@ public class LoadText : MonoBehaviour
         }
         else
         {
-            if(TreeName !=null)
+            if(TreeTag != null)
             {
                 InfoUI_toggle();
                 //GameObject.Find("Canvas").transform.Find("TreePicture").gameObject.SetActive(false);
                 StopCoroutine(runningCoroutine);
-                TreeName = null;
+                TreeTag = null;
                 TreePicture.GetComponent<Image>().sprite = null;
                 treeText.text = null;
             }
@@ -105,6 +113,23 @@ public class LoadText : MonoBehaviour
         }
         
     }
+
+    private string TryingGetTagAtParent(Transform transform)
+    {   // 물체의 트랜스폼을 기준으로 태그를 찾고 없다면 부모의 태그를 얻는 함수
+        do
+        {
+            string result = transform.tag.ToString();
+            if (result == "Untagged")
+            {   // 태그가 없을 경우
+                transform = transform.parent;
+            }
+            else
+            {
+                return result;
+            }
+        } while (true);
+    }
+
     public IEnumerator InputText(string txtData_2)
     {
         Debug.Log(txtData_2.Length);
