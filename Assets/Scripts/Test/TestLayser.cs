@@ -46,7 +46,6 @@ public class TestLayser : MonoBehaviour
                 RaycastCheck = false;
             }
             ShowLayser(hit);
-            Debug.Log("On");
             
         }
         else

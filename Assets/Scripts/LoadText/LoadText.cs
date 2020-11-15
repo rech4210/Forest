@@ -65,7 +65,7 @@ public class LoadText : MonoBehaviour
             TreeTag = TryingGetTagAtParent(TL.hit.transform);
 
             //GameObject.Find("Canvas").transform.Find("TreePicture").gameObject.SetActive(true);
-            Debug.Log(TreeTag);
+
 
             try
             {
