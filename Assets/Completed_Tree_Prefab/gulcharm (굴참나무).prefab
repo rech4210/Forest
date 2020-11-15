@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5583206629418501915}
   - component: {fileID: 694575038202904157}
   m_Layer: 0
-  m_Name: gulcharm
-  m_TagString: Untagged
+  m_Name: "gulcharm (\uAD74\uCC38\uB098\uBB34)"
+  m_TagString: Qulcham
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

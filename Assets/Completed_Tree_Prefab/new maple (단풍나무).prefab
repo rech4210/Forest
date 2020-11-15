@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9137971628607305465}
   m_Layer: 0
-  m_Name: new maple
-  m_TagString: Untagged
+  m_Name: "new maple (\uB2E8\uD48D\uB098\uBB34)"
+  m_TagString: Danpung
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

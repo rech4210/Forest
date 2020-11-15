@@ -329,8 +329,8 @@ GameObject:
   - component: {fileID: 3439355236102751390}
   - component: {fileID: 3906240045036326109}
   m_Layer: 0
-  m_Name: gulcharm_body_branch
-  m_TagString: Untagged
+  m_Name: "winter_gulcharm (\uAD74\uCC38\uB098\uBB34)"
+  m_TagString: Qulcham
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -343,7 +343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7109710846698596693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 655.2404, y: 0, z: 375.20117}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1098219336305209293}

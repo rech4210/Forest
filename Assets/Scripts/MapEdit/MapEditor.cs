@@ -14,12 +14,32 @@ public class MapEditor : MonoBehaviour
     private int selectingIndex;
     private List<GameObject> history;
     private Transform createTransform;
+    private string treeListString;
 
     private void Start()
     {
         map = new GameObject("Map");
         history = new List<GameObject>();
         createTransform = gameObject.transform.Find("Create Position").transform;
+
+        for(int i = 0; i < trees.Length; i++)
+        {
+            if (trees[i] == null)
+            {
+                continue;
+            }
+
+            if(i <= 11)
+            {
+                treeListString += $"F{(i + 1)}";
+            }
+            else
+            {
+                treeListString += $"Shift + F{i - 11}";
+            }
+
+            treeListString += $": {trees[i].name}\n[{trees[i].tag}]\n\n";
+        }
     }
 
     void Update()
@@ -72,7 +92,10 @@ public class MapEditor : MonoBehaviour
     {
         try
         {
-            GUI.Box(new Rect(10, 10, 100, 90), selectingIndex + "\n" + trees[selectingIndex].name);
+            GUI.Box(new Rect(Screen.width / 2 - 200, Screen.height - 55 , 400, 50),
+                $"{trees[selectingIndex].name}\n[{trees[selectingIndex].tag}]");
+
+            GUI.Box(new Rect(Screen.width - 275, 5, 270, Screen.height - 10), treeListString);
         }
         catch (System.IndexOutOfRangeException)
         {
